@@ -1,10 +1,10 @@
-const { Router } = require("express");
-const planets = require("../data/planets.json");
+const { Router } = require('express')
+const planets = require('../data/planets.json')
 
-const planetsRouter = Router();
+const planetsRouter = Router()
 
-planetsRouter.get("/", (req, res) => {
-  res.status(200).json(planets);
-});
+planetsRouter.get('/', (req, res) => {
+  res.status(200).json(planets)
+})
 
-module.exports = planetsRouter;
+module.exports = planetsRouter
